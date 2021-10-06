@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style type="text/css">
+            body {
+                background: #202020;
+                color: darkgray;
+            }
+            .frm {
+            }
+            .line1 {
+                float: left;
+                line-height: fit-content;
+                width: fit-content;
+                text-align: left;
+            }
+            .line2 {
+                float: left;
+                line-height: fit-content;
+                width: fit-content;
+                text-align: left;
+            }
+
+            .line3 {
+                float: left;
+                line-height: fit-content;
+                width: fit-content;
+                text-align: left;
+            }
+
+            .line4 {
+                float: left;
+                line-height: fit-content;
+                width: fit-content;
+                text-align: left;
+            }
+            .line5 {
+                float: left;
+                line-height: fit-content;
+                width: fit-content;
+                text-align: left;
+            }
+            .hp {
+                
+            }
+            input[type=text] {
+                background: #202020;
+                border-color: #363636;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 2px;
+                height: 25px;
+                min-width: 200px;
+                max-width: 500px;
+                width: 50%;
+                color: darkgray;
+                font-size: small;
+            }
+            input[type=text]:focus {
+                outline: none;
+                border-color: #4d90fe;
+            }
+            input[type=text]:focus-visible {
+                border-color: #4d90fe;
+            }
+            input[type="submit"] {
+                background: #4d90fe;
+                color: white;
+                border-style: solid;
+                border-radius: 2px;
+                border-color: #4d90fe;
+                border-width: 1px;
+                width: 105px;
+                height: 30px;
+            }
+            #a {
+                margin-top: 10px;
+                margin-left: 10px;
+            }
+            #head {
+                display: flex;
+                width: auto;
+            }
+            #title {
+                color: white;
+                font-size: 170%;
+                padding-left: 0%;
+            }
+            #st {
+                font-size: 120%;
+                color: white;
+            }
+            #sb:hover {
+                background-color: #8ab4f8;
+                border-color: blue;
+            }
+            a {
+                color: lightskyblue;
+            }
+            a:visited {
+                color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="head">
+            <p id="title">Advanced Search</p>
+            <ul style="padding-left: 70%;">
+                <li><a id="fi" href="img.html">Find images</a></li>
+                <li><a id="gs" href="index.html">Google Search</a></li>
+            </ul>
+        </div>
+        <div style="border-bottom: 1px solid #ebebeb;"></div>
+        <div id="a">
+            <p id="st">Find pages that contain ...</p>
+            <div class="frm">
+                <form action="https://google.com/search">
+                    <div style="clear: both; padding-top: 20px;" >
+                        <p class="line1" style="margin-top: 0; font-family: sans-serif; font-style: normal; font-weight: normal; font-size: medium; ">all these words:</p>
+                        <input style="margin-left: 77px;" class="line1" type="text" name="as_q">
+                    </div>
+                    <div style="clear: both;padding-top: 20px;">
+                        <p class="line2" style="margin-top: 0; font-family: sans-serif; font-style: normal; font-weight: normal; font-size: medium;  ">exact word or phrase:</p>
+                        <input style="margin-left: 35px;" class="line2" type="text" name="as_epq">
+                    </div>
+                    <div style="clear: both; padding-top: 20px;">
+                        <p class="line3" style="margin-top: 0; font-family: sans-serif; font-style: normal; font-weight: normal; font-size: medium;  ">any of these words:</p>
+                        <input style="margin-left: 50px;" class="line3" type="text" name="as_oq">
+                    </div>
+                    <div style="clear: both; padding-top: 20px;">
+                        <p class="line4" style="margin-top: 0; font-family: sans-serif; font-style: normal; font-weight: normal; font-size: medium;  ">none of these words:</p>
+                        <input style="margin-left: 40px;" class="line4" type="text" name="as_eq">
+                    </div>
+                    <div style="clear: both; padding-top: 20px;">
+                        <p class="line5" style="margin-top: 0; font-family: sans-serif; font-style: normal; font-weight: normal; font-size: medium;  ">numbers ranging from:</p>
+                        <input style="margin-left: 28px;" class="line5" type="text" name="as_nlo">
+                        <p class="line5" style="margin-top: 0; margin-left: 10px; margin-right: 10px; font-family: sans-serif; font-style: normal; font-size: medium;  font-weight: normal; ">to</p>
+                        <input class="line5" type="text" name="as_nhi">
+                    </div>
+                    <div style="clear:both; margin-left: 60%; padding-top: 35px; color:white;"><input  id="sb" type="submit" value="Advanced search"></div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

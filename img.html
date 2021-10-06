@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Images</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body {
+                background: #202020;
+            }
+            div {
+                
+            }
+            #container {
+                display: flex; 
+                justify-content: center;
+                align-items: center;
+                margin-top: 50%;
+                clear: both;
+            }
+            #sf {
+                padding-top: 5px;
+                margin-left: 35px;
+                width: 400px;
+                height: 30px;
+                border: none;
+                background: transparent;
+                color: white;
+                font-size: medium;
+                font-family: sans-serif;
+            }
+            #sf:focus {
+                outline: none;
+                border: none;
+            }
+            #sb {
+                border: none;
+                background-image: url(searchblue.png);
+                background-color: transparent;
+                width: 20px;
+                height: 20px;
+                background-size: 20px;
+                margin-left: 10px;
+                margin-top: 10px;
+                margin-right: 10px;
+            }
+            .sln {
+                float: left;
+            }
+            #sbx {
+                border-style: solid;
+                border-color: #363636;
+                border-radius: 100px;
+                width: 500px;
+                height: 40px;
+                background: transparent;
+                border-width: 1px;
+            }
+            #sbx:hover {
+                box-shadow: 0 2px 10px rgb(82 82 82);
+                background-color: #363636;
+            }
+            #title {
+                float: left;
+                font-size: 500%;
+                font-family: sans-serif;
+                color: white;
+            }
+            #lnk {
+                margin-left: 80%;
+            }
+            a {
+                color: lightskyblue;
+            }
+            a:visited {
+                color: hotpink;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="lnk">
+            <ul>
+                <li style="color: darkgrey;"><a href="index.html">Google Search</a></li>
+                <li style="color: darkgrey;"><a href="adv.html">Advanced Search</a></li>
+            </ul>
+        </div>
+        <div id="container">
+            <div style="clear: both; position: absolute; top: 200px;"><p id="title">Images</p></div>
+            <div style="clear: both; position: absolute; top: 400px;">
+                <form style="float: left;" action="https://www.google.com/search">
+                    <div>
+                        <div id="sbx"><input class="sln" id="sf" type="text" name="q" autocomplete="off"><input class="sln" id="sb" type="submit" value=""></div>
+                        <input type="hidden" name="sclient" value="img">
+                        <input type="hidden" name="tbm" value="isch">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
